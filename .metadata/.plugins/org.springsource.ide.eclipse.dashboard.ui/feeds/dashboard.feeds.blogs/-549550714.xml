@@ -5,7 +5,47 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2016-09-15T19:28:07Z</updated>
+  <updated>2016-09-16T13:50:00Z</updated>
+  <entry>
+    <title>Spring Cloud Data Flow 1.1 M1  and 1.0.1 GA released</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/09/16/spring-cloud-data-flow-1-1-m1-and-1-0-1-ga-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Thomas Risberg</name>
+    </author>
+    <id>tag:spring.io,2016-09-16:2620</id>
+    <updated>2016-09-16T13:50:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team, I am excited to announce the release of the first milestone of Spring Cloud Data Flow 1.1 along with a 1.0.1 maintenance release for the 1.0 version. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; A great way to start using this new release(s) is to follow the &lt;a href="http://cloud.spring.io/spring-cloud-dataflow/#spring-cloud-data-flow-server-implementations"&gt;release matrix&lt;/a&gt; on the project page, which includes the download coordinates and the links to the reference guide.&lt;/p&gt;&lt;h2&gt;&lt;a href="#1-1-m1-release" class="anchor" name="1-1-m1-release"&gt;&lt;/a&gt;1.1 M1 release&lt;/h2&gt;
+&lt;p&gt;Over the last few weeks, we have added new features and improvements to the overall orchestration of data microservices. The following new features were included in the 1.1.0.M1 release: &lt;/p&gt;&lt;h3&gt;&lt;a href="#security" class="anchor" name="security"&gt;&lt;/a&gt;Security&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Adds &lt;a href="http://docs.spring.io/spring-cloud-dataflow/docs/1.1.0.M1/reference/html/getting-started-security.html#getting-started-security-ldap-authentication"&gt;LDAP backend-authentication&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Adds &lt;a href="http://docs.spring.io/spring-cloud-dataflow/docs/1.1.0.M1/reference/html/getting-started-security.html#getting-started-security-basic-authentication"&gt;Basic backend-authentication&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Adds &lt;a href="http://docs.spring.io/spring-cloud-dataflow/docs/1.1.0.M1/reference/html/getting-started-security.html#getting-started-security-file-based-authentication"&gt;File backend-authentication&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Improvements to &lt;a href="http://docs.spring.io/spring-cloud-dataflow/docs/1.1.0.M1/reference/html/getting-started-security.html#getting-started-security-ldap-authentication"&gt;OAUTH backed-authentication&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-boot-1-3-x-and-1-4-x-compatibility" class="anchor" name="spring-boot-1-3-x-and-1-4-x-compatibility"&gt;&lt;/a&gt;Spring Boot 1.3.x and 1.4.x Compatibility&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Adds backward compatibility for “&lt;a href="http://docs.spring.io/spring-cloud-dataflow/docs/1.1.0.M1/reference/html/spring-cloud-dataflow-register-apps.html#spring-cloud-dataflow-stream-app-whitelisting"&gt;property whitelisting&lt;/a&gt;” to support both Spring Boot 1.3.x and 1.4.x applications&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#ui-improvements" class="anchor" name="ui-improvements"&gt;&lt;/a&gt;UI improvements&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Builds upon &lt;a href="https://github.com/spring-projects/spring-flo/releases/tag/v0.5.1"&gt;0.5.1&lt;/a&gt; release of Spring Flo&lt;/li&gt;
+  &lt;li&gt;Adds bulk import and registration of stream and task app-starters&lt;/li&gt;
+  &lt;li&gt;Adds Flo’s visual representation of running streams&lt;/li&gt;
+  &lt;li&gt;Adds stream deployment progress&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#general" class="anchor" name="general"&gt;&lt;/a&gt;General&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Adds the ability to turn-off analytics infrastructure in entirety&lt;/li&gt;
+  &lt;li&gt;Adds REST-Docs infrastructure for core REST-APIs&lt;/li&gt;
+  &lt;li&gt;Test coverage improvements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Review the &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/milestone/7?closed=1"&gt;1.1.0.M1 (core)&lt;/a&gt; / &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow-ui/milestone/7?closed=1"&gt;1.1.0.M1 (ui)&lt;/a&gt; release markers to learn more about the incremental improvements. &lt;/p&gt;
+&lt;p&gt;Looking ahead, we are targeting 1.1 GA release of Spring Cloud Stream and building upon this, Spring Cloud Data Flow would support Apache Kafka’s 0.9/0.10 releases, schema-evolution, and the newly improved reactive-streaming capabilities. Dynamic scaling and auto-rebalancing of stream partitions would be supported as well.&lt;/p&gt;
+&lt;p&gt;Likewise, we are targeting 1.1 GA release of Spring Cloud Task with improvements including updates to task partitions, newer database schemas, support for external execution ids, and the improved interoperability between streaming and task pipelines in Spring Cloud Data Flow. &lt;/p&gt;
+&lt;p&gt;Look out for significant improvements to UI/UX around Task workflows. Better paging, sorting, monitoring, and search capabilities, including Flo support for “composed tasks” is coming.&lt;/p&gt;&lt;h2&gt;&lt;a href="#1-0-1-ga-release" class="anchor" name="1-0-1-ga-release"&gt;&lt;/a&gt;1.0.1 GA release&lt;/h2&gt;
+&lt;p&gt;The 1.0.1 release builds upon 1.0.2.RELEASE of Spring Cloud Task, bug-fixes and documentation improvements. &lt;/p&gt;
+&lt;p&gt;Review the &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/milestone/5?closed=1"&gt;1.0.1.RELEASE release marker&lt;/a&gt; to learn more about the incremental improvements. &lt;/p&gt;&lt;h2&gt;&lt;a href="#upcoming-webinar" class="anchor" name="upcoming-webinar"&gt;&lt;/a&gt;Upcoming webinar&lt;/h2&gt;
+&lt;p&gt;Tune-in to “&lt;a href="https://spring.io/blog/2016/09/13/webinar-data-microservices-in-the-cloud"&gt;Data Microservices in the Cloud&lt;/a&gt;” webinar scheduled on 9/29/2016 to learn more about Spring Cloud Data Flow and the incremental improvements.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Java DSL for Spring Integration 1.2 Milestone 2 is available</title>
     <link rel="alternate" href="https://spring.io/blog/2016/09/15/java-dsl-for-spring-integration-1-2-milestone-2-is-available" />
@@ -786,85 +826,5 @@ public class DataJdbcSampleTests {&#xD;
 &lt;p&gt;&lt;a href="http://projects.spring.io/spring-ws/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-ws"&gt;GitHub&lt;/a&gt; | &lt;a href="https://jira.spring.io/browse/SWS"&gt;Issues&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The artifacts are staged on maven central, &lt;a href="http://repo.spring.io/release"&gt;http://repo.spring.io/release&lt;/a&gt;, and bintray.&lt;/p&gt;
 &lt;p&gt;Cheers!&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud Camden M1 is available</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/08/29/spring-cloud-camden-m1-is-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Marcin Grzejszczak</name>
-    </author>
-    <id>tag:spring.io,2016-08-29:2601</id>
-    <updated>2016-08-29T12:19:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team, I am pleased to announce that Milestone 1 of the &lt;a href="https://cloud.spring.io"&gt;Spring Cloud Camden&lt;/a&gt; Release Train is available today. The release can be found in our &lt;a href="https://repo.spring.io/milestone/"&gt;Spring Milestone&lt;/a&gt; repository. We’ve made numerous enhancements and bug fixes! You can check out the &lt;code&gt;Camden.M1&lt;/code&gt; &lt;a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Camden-Release-Notes"&gt;release notes for more information&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The following modules were updated as part of Camden.M1:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;Spring Cloud Build        1.2.0.RELEASE
-Spring Cloud Stream       Brooklyn.M1
-Spring Cloud Bus          1.2.0.M1
-Spring Cloud Config       1.2.0.M1
-Spring Cloud Netflix      1.2.0.M1
-Spring Cloud Consul       1.1.0.M1
-Spring Cloud Contract     1.0.0.M2
-Spring Cloud CLI          1.2.0.M1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The combined release train docs are available &lt;a href="http://cloud.spring.io/spring-cloud-static/spring-cloud.html"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;And, as always, we welcome feedback: either on &lt;a href="https://github.com/spring-cloud/"&gt;GitHub&lt;/a&gt;, on &lt;a href="https://gitter.im/spring-cloud/spring-cloud"&gt;Gitter&lt;/a&gt;, on Stack Overflow, or on Twitter.&lt;/p&gt;
-&lt;p&gt;To get started with Maven with a BOM (dependency management only)&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;&amp;lt;repositories&amp;gt;&#xD;
-    &amp;lt;repository&amp;gt;&#xD;
-        &amp;lt;id&amp;gt;spring-milestones&amp;lt;/id&amp;gt;&#xD;
-        &amp;lt;name&amp;gt;Spring Milestones&amp;lt;/name&amp;gt;&#xD;
-        &amp;lt;url&amp;gt;http://repo.spring.io/milestone&amp;lt;/url&amp;gt;&#xD;
-        &amp;lt;snapshots&amp;gt;&#xD;
-            &amp;lt;enabled&amp;gt;false&amp;lt;/enabled&amp;gt;&#xD;
-        &amp;lt;/snapshots&amp;gt;&#xD;
-    &amp;lt;/repository&amp;gt;&#xD;
-&amp;lt;/repositories&amp;gt;&#xD;
-&amp;lt;dependencyManagement&amp;gt;&#xD;
-  &amp;lt;dependencies&amp;gt;&#xD;
-    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
-    &amp;lt;artifactId&amp;gt;spring-cloud-dependencies&amp;lt;/artifactId&amp;gt;&#xD;
-    &amp;lt;version&amp;gt;Camden.M1&amp;lt;/version&amp;gt;&#xD;
-    &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
-    &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
-  &amp;lt;/dependencies&amp;gt;&#xD;
-&amp;lt;/dependencyManagement&amp;gt;&#xD;
-&amp;lt;dependencies&amp;gt;&#xD;
-  &amp;lt;dependency&amp;gt;&#xD;
-    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
-    &amp;lt;artifactId&amp;gt;spring-cloud-starter-config&amp;lt;/artifactId&amp;gt;&#xD;
-  &amp;lt;/dependency&amp;gt;&#xD;
-  &amp;lt;dependency&amp;gt;&#xD;
-    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
-    &amp;lt;artifactId&amp;gt;spring-cloud-starter-eureka&amp;lt;/artifactId&amp;gt;&#xD;
-  &amp;lt;/dependency&amp;gt;&#xD;
-  ...&#xD;
-&amp;lt;/dependencies&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;or with Gradle:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;buildscript {&#xD;
-  dependencies {&#xD;
-    classpath &amp;quot;io.spring.gradle:dependency-management-plugin:0.6.0.RELEASE&amp;quot;&#xD;
-  }&#xD;
-}&#xD;
-repositories {&#xD;
-    maven {&#xD;
-        url &amp;#39;http://repo.spring.io/milestone&amp;#39;&#xD;
-    }&#xD;
-}&#xD;
-apply plugin: &amp;quot;io.spring.dependency-management&amp;quot;&#xD;
-&#xD;
-dependencyManagement {&#xD;
-  imports {&#xD;
-    mavenBom &amp;#39;org.springframework.cloud:spring-cloud-dependencies:Camden.M1&amp;#39;&#xD;
-  }&#xD;
-}&#xD;
-&#xD;
-dependencies {&#xD;
-    compile &amp;#39;org.springframework.cloud:spring-cloud-starter-config&amp;#39;&#xD;
-    compile &amp;#39;org.springframework.cloud:spring-cloud-starter-eureka&amp;#39;&#xD;
-    ...&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
   </entry>
 </feed>
