@@ -38,26 +38,93 @@
     </dependencyManagement>
 
     <dependencies>
+     <!-- Spring -->
+    	<dependency>
+    			<groupId>org.springframework</groupId>
+    			<artifactId>spring-core</artifactId>
+    			<version>${spring-framework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring-framework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${spring-framework.version}</version>
+		</dependency>
+		<dependency>
+   				 <groupId>commons-dbcp</groupId>
+    			<artifactId>commons-dbcp</artifactId>
+   			 	<version>1.2.2</version>
+		</dependency>
+
+		<!-- Spring ORM support -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring-framework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring-framework.version}</version>
+		</dependency>
+		<!-- Hibernate -->
     	<dependency>
    				 <groupId>org.hibernate</groupId>
    			 	 <artifactId>hibernate-core</artifactId>
    			     <version>4.1.4.Final</version>
 		</dependency>
+		<dependency>
+    		<groupId>org.hibernate</groupId>
+    		<artifactId>hibernate-validator</artifactId>
+    		<version>4.2.0.Final</version>
+		</dependency>
+		<!-- Mysql Driver -->
+		<dependency>
+                    <groupId>mysql</groupId>
+    				<artifactId>mysql-connector-java</artifactId>
+   				    <version>5.1.6</version>
+		</dependency>
+		
+		<!-- Jersey -->
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-servlet-core</artifactId>
             <!-- use the following artifactId if you don't need servlet 2.x compatibility -->
             <!-- artifactId>jersey-container-servlet</artifactId -->
         </dependency>
+        <dependency>
+    		<groupId>org.glassfish.jersey.ext</groupId>
+   			 <artifactId>jersey-spring3</artifactId>
+    		</dependency>
         <!-- uncomment this to get JSON support
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-moxy</artifactId>
         </dependency>
         -->
+        <!-- Logging with SLF4J & LogBack -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+			<scope>runtime</scope>
+		</dependency>
     </dependencies>
     <properties>
         <jersey.version>2.16</jersey.version>
+        <spring-framework.version>4.1.4.RELEASE</spring-framework.version>
+        <logback.version>1.0.13</logback.version>
+		<slf4j.version>1.7.5</slf4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 </project>

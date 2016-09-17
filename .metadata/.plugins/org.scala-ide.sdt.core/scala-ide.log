@@ -9,3 +9,5 @@
 2016-09-16 21:39:10,234 ERROR [Initializing Servers view] - System.err - at org.eclipse.wst.server.ui.internal.viewers.AbstractTreeContentProvider$1.run(AbstractTreeContentProvider.java:57)
 2016-09-17 11:01:10,851 ERROR [Worker-0] - System.err - log4j:WARN No appenders could be found for logger (org.springsource.ide.eclipse.commons.core.templates.TemplateProcessor).
 2016-09-17 11:01:10,853 ERROR [Worker-0] - System.err - log4j:WARN Please initialize the log4j system properly.
+2016-09-17 15:00:18,791 ERROR [Worker-26] - System.err - log4j:WARN No appenders could be found for logger (org.springsource.ide.eclipse.commons.core.templates.TemplateProcessor).
+2016-09-17 15:00:18,798 ERROR [Worker-26] - System.err - log4j:WARN Please initialize the log4j system properly.
