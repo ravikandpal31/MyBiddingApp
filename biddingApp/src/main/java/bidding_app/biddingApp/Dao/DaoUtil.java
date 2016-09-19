@@ -1,5 +1,7 @@
 package bidding_app.biddingApp.Dao;
 
+import java.io.Serializable;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -15,13 +17,14 @@ public class DaoUtil {
 	@Qualifier(value="sessionfactory")
 	private SessionFactory sf;
 	
-	public void insertData(User u){
+	public Serializable insertData(User u){
 
 		Session s=sf.openSession();
 		Transaction t=s.beginTransaction();
-		s.save(u);
+		Serializable i= s.save(u);
 		
 		t.commit();
+		return i;
 		
 	}
 	public User getData(int id){

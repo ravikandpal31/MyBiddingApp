@@ -22,10 +22,17 @@ public class MyResource {
 
 	@GET
     @Produces(MediaType.TEXT_PLAIN)
-    public String getIt() {
+    public String InsertData() {
+		User u=new User("jaideepsharma32@gmail.com", "Jaideep", "Sharma", "jaideep", "pilani", "India", null);
 		
-		
-    	User u=d.getData(5);
-        return u.getFirstName();
+		if(d.insertData(u).equals(1)){
+			
+			return u.getFirstName()+" "+u.getLastName()+" your resgistration is successful";
+		}
+		else{
+			
+			return "Registration was unsuccessful";
+		}
+    	
     }
 }
